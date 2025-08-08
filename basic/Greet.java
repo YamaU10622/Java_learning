@@ -1,12 +1,8 @@
 package basic;
-import java.util.Scanner;
 
 public class Greet{
   public static void main(String[] args){
-    Scanner scanner = new Scanner(System.in);
-    String userInput = scanner.nextLine();
-
-    String message = userInput + "さん、こんにちは。";
+    String message = args[0] + "さん、" + args[1] + "。";
     System.out.println(message);
   }
 }
